@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "nerftest"
+version = "0.1.0"
+description = ""
+authors = ["Alex Rowe <arowe@impel.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10, <3.12"
+pip_and_pip_tools = "^7.0.0"
+numpy = "1.18.5"
+matplotlib = "3.5.0"
+imageio = "^2.34.1"
+tensorflow = "1.15.5"
+
+[tool.poetry.group.dev.dependencies]
+imageio-ffmpeg = "^0.5.1"
+ConfigArgParse = "^1.7"
+ImageMagic = "^0.2.1"
+crashlaker-imagemagick = "^0.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
